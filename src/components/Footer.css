@@ -1,0 +1,70 @@
+.footer {
+    background-color: rgb(99, 99, 99);
+}
+
+.f-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr; 
+    grid-column-gap: 10px;
+}
+
+.logo {
+    color: rgb(0, 153, 255);
+}
+
+
+.contact {
+    display: grid;
+    grid-template-columns: 10% 90%;    
+    grid-column-gap: 7px;               
+}
+
+/* Details */
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Links */
+.contact-links {
+    display: grid;
+    grid-template-areas: ". contact-with-us contact-with-us ."
+                         ". fbk twi ."
+                         ". link yout .";
+    
+}
+
+.contact-with-us {
+    grid-area: contact-with-us;
+}
+
+.fbk {
+    grid-area: fbk;
+}
+
+.twi {
+    grid-area: twi;
+}
+
+.yout {
+    grid-area: yout;
+}
+
+.link {
+    grid-area: link;
+}
+
+
+@media(max-width: 770px) {
+    .f-container {
+        grid-template-columns: 2fr 1fr;
+        grid-row-gap: 10px; 
+    }
+
+    .contact-links {
+        grid-template-areas: "contact-with-us contact-with-us . ."
+                             "fbk twi . ."
+                             "link yout . .";
+        grid-column-gap: 0px;
+    }
+}

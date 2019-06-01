@@ -1,0 +1,47 @@
+.content {
+    display: grid;
+    grid-template-areas: "title title"
+                         "imageContainer imageContainer";
+    grid-row-gap: 10px;
+}
+
+
+.imageContainer {
+    grid-area: imageContainer;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.title {
+    grid-area: title;
+}
+
+.container1 {
+    background-color: #FFCB23;
+}
+
+.container2 {
+    background-color: #68D6E7;
+}
+
+.container3 {
+    background-color: rosybrown;
+}
+
+.container4 {
+    background-color: yellowgreen;
+}
+
+@media(max-width: 770px) {
+    .imageContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 500px) {
+    .imageContainer {
+        grid-template-columns: 1fr;
+    }
+}

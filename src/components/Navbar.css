@@ -1,0 +1,6 @@
+.button-buttons {
+  display: grid;
+  grid-template-columns: 2fr 2fr 5fr ;
+  grid-column-gap: 20px; 
+}
+
